@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>New Flight</title>
+</head>
+<%- include('../partials/header') %>
+
+<form class="NewTicketForm" action="/flights" method="POST">
+  <label>Airline:
+      <select name="airline">
+        <option value="American">American</option>
+        <option value="Southwest">Southwest</option>
+        <option value="United">United</option>
+      </select>
+    </label><br>
+  <p>Airport:
+    <select name="airport">
+      <option value="DEN">DEN</option>
+      <option value="AUS">AUS</option>
+      <option value="LAX">LAX</option>
+      <option value="DFW">DFW</option>
+      <option value="SAN">SAN</option>
+    </select>
+  </p><br>
+  <label>Flight Number:
+    <input type="number" name="flightNo">
+  </label><br>
+  <label>Departs at:
+    <input type="datetime-local" name="departs">
+  </label><br>
+  <input type="submit" value="Book Flight">
+</form>
+
+<%- include('../partials/footer') %>

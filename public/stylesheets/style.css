@@ -1,0 +1,169 @@
+* {
+  color: ivory;
+}
+
+html{
+  border: 20px solid  white;
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding-bottom: 80px;
+}
+
+html{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.fakedelete{
+  background-color: rgba(255, 255, 200, 0.356);
+  margin-left: 10px;
+  border: 1px solid white;
+}
+nav {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 200, 0.356);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 70px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.DestForm{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#flightdetails:hover{
+color: black;
+background-color: white;
+}
+.DestForm{
+  display: flex;
+  flex-direction: row;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #912F13;
+  height: auto;
+}
+
+a{ 
+  border: solid white 2px;
+  padding: 15px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  color: gray;
+}
+
+a.active {
+  color: white;
+}
+
+.new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
+.newForm *, .DestinationForm *, .ticketForm * {
+  font-size: 14px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+.addTicketForm{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.NewTicketForm {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin-left: auto;
+  color: 	whitesmoke;
+}
+
+table {
+  font-size: 14px;
+}
+
+table thead th {
+  padding: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.473);
+  border-top: 2px solid rgba(255, 255, 255, 0.473);
+  font-size: 25px;
+}
+
+table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 17.5px;
+}
+
+#list td:nth-child(2){
+  min-width: 100px;
+}
+
+#list td:nth-child(3){
+  min-width: 100px;
+}
+#list a {
+  border-radius: 4px;
+  background-color:	transparent;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.flightData {
+  text-transform: capitalize;
+}
+
+.entry {
+  background-color: rgba(255, 255, 200, 0.356);
+  color: white;
+}
+
+.NewTicket {
+  border-radius: 4px;
+  background-color: rgba(255, 255, 200, 0.356);
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.destination {
+  background-color: rgba(255, 255, 200, 0.356);
+  color: whitesmoke;
+}
+
+.footerBTN {
+  background-color: rgba(255, 255, 200, 0.356);
+}
+
+footer{
+  margin-top:100px;
+}
